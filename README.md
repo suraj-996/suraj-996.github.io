@@ -14,7 +14,3 @@ Website contains:
 - Contact
 - Footer 
 
-If u liked my website and the code was useful to you, <br>
-feel free to leave a star (much appreciated) fork it and customize as you like! :)
-
-- Inspired design by Bedimcode-Alexa design 🙌
