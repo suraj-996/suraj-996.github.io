@@ -1032,6 +1032,9 @@ img {
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 380px) {
+  .github-stats {
+    display: none;
+  }
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -1330,5 +1333,29 @@ img {
   }
   .contact__inputs {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* github stats */
+
+.calendar {
+  width: 85%;
+  margin: auto;
+  padding: 4rem;
+  border: none !important;
+  padding: 0;
+}
+
+/* laptop screen */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .calendar {
+    width: 65%;
+  }
+}
+
+/* For 4K devices */
+@media screen and (min-width: 2160px) {
+  .calendar {
+    width: 40%;
   }
 }
