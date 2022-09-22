@@ -210,3 +210,54 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+
+//conatct form
+document.getElementById("contact-form").addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  //button animation
+  document.getElementById("email-submit").innerText = "Sending...";
+
+  if (
+    document.getElementById("name").value != "" &&
+    document.getElementById("email").value != "" &&
+    document.getElementById("message").value != ""
+  ) {
+    let params = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value,
+    };
+
+    const serviceID = "service_embce24";
+    const templateID = "template_cci0niw";
+
+    emailjs
+      .send(serviceID, templateID, params)
+      .then((res) => {
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+
+        //button animation
+        document.getElementById("email-submit").innerHTML = `
+          Send message
+          <i class="uil uil-message button__icon"></i>`;
+
+        //success alert
+        alert("Your message send susscessfully!");
+      })
+      .catch((err) => {
+        //button animation
+        document.getElementById("email-submit").innerHTML = `
+          Send message
+          <i class="uil uil-message button__icon"></i>`;
+
+        //console alert
+        console.log(err);
+      });
+  } else {
+    alert("Please fill out all the fields");
+  }
+});
