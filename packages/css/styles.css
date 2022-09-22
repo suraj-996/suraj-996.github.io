@@ -450,6 +450,11 @@ img {
 
 /*==================== SKILLS ====================*/
 
+.tech-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 .skills__container {
   row-gap: 0;
 }
