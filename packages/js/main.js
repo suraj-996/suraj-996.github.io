@@ -217,7 +217,7 @@ document.getElementById("contact-form").addEventListener("submit", (e) => {
   e.preventDefault();
 
   //button animation
-  document.getElementById("email-submit").innerText = "Sending...";
+  document.getElementById("email-submit").innerText = "Sending Message...";
 
   if (
     document.getElementById("name").value != "" &&
