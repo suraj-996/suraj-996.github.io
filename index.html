@@ -467,7 +467,7 @@
         
          <section class="github-stats section" id="github-stats">
             <h2 class="section__title">GitHub Stats</h2>
-            <span class="section__subtitle">Hacking on daily</span>
+            <span class="section__subtitle">Contribution on Github</span>
 
             <div class="calendar"></div>
         </section>
@@ -677,6 +677,35 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="./packages/js/main.js"></script>
+                                       
+     <script>
+      GitHubCalendar(".calendar", "sanajitjana", {
+        responsive: true,
+        global_stats: false,
+        tooltips: true,
+      });
+
+      $(".counting").each(function () {
+        var $this = $(this),
+          countTo = $this.attr("data-count");
+
+        $({ countNum: $this.text() }).animate(
+          {
+            countNum: countTo,
+          },
+          {
+            duration: 3000,
+            easing: "linear",
+            step: function () {
+              $this.text(Math.floor(this.countNum));
+            },
+            complete: function () {
+              $this.text(this.countNum);
+            },
+          }
+        );
+      });
+    </script>
 </body>
 
 </html>
