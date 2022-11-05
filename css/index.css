@@ -1,0 +1,373 @@
+.skills{
+    border: 1px solid transparent;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 50px;
+  }
+  
+  .logo_div{
+    border: 1px solid transparent;
+    text-align: center;
+  }
+  
+  .logo_div>img{
+    border: 1px solid transparent;
+    width: 40%;
+    height: 65%;
+    margin-bottom: 3%;
+  }
+
+  
+
+  #profileimage{
+    display: none;
+    
+  }
+  
+  .projects {
+    border: 1px solid transparent;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+  
+  }
+  
+  .projects > div{
+    border: 1px solid transparent;
+    background-color: rgb(41,39,56);
+    border-radius: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .projects > div:hover{
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0.96;
+    -webkit-transition: opacity 800ms ease-in-out 0s;
+    transition: opacity 800ms ease-in-out 0s;
+    -webkit-transition: -webkit-transform 1s ease-in-out 0s;
+    transition: -webkit-transform 1s ease-in-out 0s;
+    transition: transform 1s ease-in-out 0s;
+    transition: transform 1s ease-in-out 0s, -webkit-transform 1s ease-in-out 0s;
+    cursor: pointer;
+    border: 1px solid transparent;
+  }
+  
+  .projects>div>.image_div{
+    border: 1px solid transparent;
+  }
+  
+  .projects>div>div:nth-child(1)>img{
+    width: 100%;
+    height:300px;
+    border-radius: 20px;
+  }
+  .para_div>h3{
+    padding-left: 10px;
+  }
+  .projects>div>.para_div{
+    margin-top: 10px;
+    border: 1px solid transparent;
+    height: 38%;
+  }
+  
+  .projects>div>div:nth-child(2)>div{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    
+  }
+  
+  .projects>div>div:nth-child(2)>div>button{
+   border-radius: 15px;
+   width: 100px; 
+   margin-right: 1%;
+   background-color: rgb(41,39,56);
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   font-size: 13px;
+   border: none;
+   color: rgb(190,190,190);
+  }
+  
+  .projectDes{
+    margin-top: 4px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 5px;
+    text-align: left;
+  }
+  
+  .projects>div>div:nth-child(3){
+    margin-top: 20px;
+    border: 1px solid transparent;
+    text-align: center ;
+  }
+  .button-84 {
+    
+    align-items: center;
+    background-color: initial;
+    background-image: linear-gradient(#464d55, #25292e);
+    border-radius: 8px;
+    border-width: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1),0 3px 6px rgba(0, 0, 0, .05);
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    font-family: expo-brand-demi,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 18px;
+    height: 52px;
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0 32px;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all 150ms;
+    vertical-align: baseline;
+    white-space: nowrap;
+    margin-right: 5%;
+  }
+  
+  .button-84:hover {
+    box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;
+    opacity: .85;
+  }
+  
+  .button-84:active {
+    outline: 0;
+  }
+  
+  .button-84:focus {
+    box-shadow: rgba(0, 0, 0, .5) 0 0 0 3px;
+  }
+  
+  .blogs{
+    border: 1px solid transparent;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+  }
+  
+  .blog:hover{
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0.96;
+    -webkit-transition: opacity 800ms ease-in-out 0s;
+    transition: opacity 800ms ease-in-out 0s;
+    -webkit-transition: -webkit-transform 1s ease-in-out 0s;
+    transition: -webkit-transform 1s ease-in-out 0s;
+    transition: transform 1s ease-in-out 0s;
+    transition: transform 1s ease-in-out 0s, -webkit-transform 1s ease-in-out 0s;
+    cursor: pointer;
+    border: 1px solid transparent;
+  }
+  .blog{
+    border: 1px solid transparent;
+  
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  .image{
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+  }
+  
+  .animate-charcter
+  {
+     text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #7566a8 0%,
+      #cca9f1 29%,
+      #8a7f83 67%,
+      #cac99e 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 820px){
+    .navbar-toggler{
+      display: none;
+    }
+
+    .dropdown{
+      display: unset;
+    }
+  }
+
+  @media only screen and (min-width: 821px) and (max-width: 920px){
+    .navbar-toggler{
+      display: none;
+    }
+
+    .dropdown{
+      display: unset;
+    }
+  }
+  
+   @media only screen and (min-width: 426px) and (max-width: 768px){
+    .blogs{
+      border: 1px solid transparent;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-gap: 20px;
+    } 
+  
+    #profileimage{
+      display: none;
+    }
+    #nameDiv>h1{
+      font-size: 50px;
+    }
+    .h3{
+      font-size: 25px;
+    }
+  
+    .navbar-toggler{
+      display: none;
+    }
+
+    .dropdown{
+      display: unset;
+    }
+  } 
+  
+   @media only screen and (min-width: 376px) and (max-width: 425px){
+    .skills{
+      border: 1px solid transparent;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-gap: 20px;
+    }
+  
+    .h3{
+      font-size: 20px;
+    }
+  
+    .blogs{
+      border: 1px solid transparent;
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-gap: 20px;
+    } 
+    .projects {
+      border: 1px solid transparent;
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-gap: 20px;
+    
+    }
+    #profileimage{
+      border: 1px solid transparent;
+      width: 80%;
+      margin: auto;
+      margin-bottom: 1px;
+      display: unset;
+    }
+
+    #profileimage>img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+      }
+  
+      #nameDiv>h1{
+        font-size: 30px;
+      }
+
+      .mobile_view{
+        display: none;
+      }
+
+      .navbar-toggler{
+        display: none;
+      }
+
+      .dropdown{
+        display: unset;
+      }
+
+     
+  } 
+ 
+   @media only screen and (min-width: 0px) and (max-width: 375px){
+    .skills{
+      border: 1px solid transparent;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-gap: 20px;
+    }
+  
+    .h3{
+      font-size: 20px;
+    }
+  
+    .blogs{
+      border: 1px solid transparent;
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-gap: 20px;
+    } 
+    .projects {
+      border: 1px solid transparent;
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-gap: 20px;
+    }
+    #profileimage{
+      border: 1px solid transparent;
+      width: 80%;
+      margin: auto;
+      margin-bottom: 1px;
+      display: unset;
+    }
+    #profileimage>img{
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+    }
+  
+    #nameDiv{
+      border: 1px solid transparent;
+    }
+    #nameDiv>h1{
+      font-size: 20px;
+    }
+
+    .navbar-toggler{
+      display: none;
+    }
+
+    .dropdown{
+      display: unset;
+    }
+
+
+  } 
