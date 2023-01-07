@@ -8791,7 +8791,8 @@ h1, h2, h3, h4, h5,
     width: 100%;
     border-radius: 90px;
     position: relative;
-    z-index: 1; }
+    z-index: 1;
+  height: 85%; }
 
 .ftco-about ul.about-info {
   display: inline-block;
